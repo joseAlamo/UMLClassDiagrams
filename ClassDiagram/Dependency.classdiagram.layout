@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Dependency">
+  <logicalClassDesignerModelMoniker Id="4c208686-96c3-434c-84ad-3366009147a2" />
+  <nestedChildShapes>
+    <classShape Id="d357f4a2-5e71-4217-b4f1-eb41854465fb" absoluteBounds="2.375, 0.75, 2.375, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="e5b23581-3dc3-4711-9587-d3708c7b6b8f" LastKnownName="OperatingSystem" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b994da2e-2b24-461a-bb68-5e113ff91b2b" absoluteBounds="2.39, 1.1400000000000001, 2.3449999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9c5c7b3e-f325-4431-aea4-f90b964f3658" absoluteBounds="2.39, 1.5113281125823657, 2.3449999999999998, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf44fd3a-c40b-4081-821a-91fe0e10eeaf" absoluteBounds="2.875, 2.5, 1.5, 1.3828124701976776" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="1303015f-44fc-4c6e-8048-9294e53ff331" LastKnownName="OSBootLoader" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3c2bb848-52c3-478c-9320-67b89e764cba" absoluteBounds="2.89, 2.89, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5d787b50-2a4d-4c1a-90d2-429ac91e6651" absoluteBounds="2.89, 3.421484357615312, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <dependencyConnector edgePoints="[(3.625 : 2.5); (3.625 : 1.97265622516473)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="b347bef2-97ce-4424-a09b-49cba532601b" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="bf44fd3a-c40b-4081-821a-91fe0e10eeaf" />
+        <classShapeMoniker Id="d357f4a2-5e71-4217-b4f1-eb41854465fb" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4c208686-96c3-434c-84ad-3366009147a2" name="Dependency" linkedPackageId="df9a2938-d05a-475b-8afe-7c48fac6b22e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3fcc521d-2d59-40f5-8c43-6353a09df3b5">
+      <profileInstance Id="2e3b9fca-87da-4287-9575-f9224798e54f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8abbf226-f293-4e23-aa21-3fff934253b6">
+      <profileInstance Id="28a0e134-0fd7-4954-967f-f23b900c9355" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e5b23581-3dc3-4711-9587-d3708c7b6b8f" name="OperatingSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5233231c-8015-49b4-b806-32e36de5435a" />
+        <ownedAttributesInternal>
+          <property Id="fc4da172-965a-46a5-a346-27ae79a98fe8" name="Boot" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7ed29e3e-655f-4936-88e5-d0710d0dd05f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6d260996-cd08-4214-9a39-0ee2a413a192" LastKnownName="OSBootLoader" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bb4a2794-84b7-494f-b73c-dfb75145dc31" name="bootSystem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5e7845a2-1eba-4887-b5c2-39c52d1202a4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b16935e5-fc9b-4485-84bf-e2fdf0cab371" name="OSBootLoader" direction="In" isUnique="false">
+                  <elementDefinition Id="741fe224-caf6-4b4e-8b4b-0769e9e857d5" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a44df4d6-c665-42b7-9534-99a37cd2daf8" direction="Return" isUnique="false">
+                  <elementDefinition Id="ce261dff-d6fb-4590-92fd-8ec161930bc6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="91881660-0647-4c31-99f4-06ee7ddaee31" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1303015f-44fc-4c6e-8048-9294e53ff331" name="OSBootLoader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="85480611-7e11-4268-a386-86c461e86bea" />
+        <suppliersInternal>
+          <dependency Id="b347bef2-97ce-4424-a09b-49cba532601b">
+            <classMoniker Id="e5b23581-3dc3-4711-9587-d3708c7b6b8f" LastKnownName="OperatingSystem" />
+            <elementDefinition Id="64d7787e-4aa6-4d3e-a6e6-e16fdb2446b4" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="2b6f894a-1a6e-4635-9be0-22784807773b" name="BootStuff" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="01de9d14-2ed1-4ad7-a5a3-232d9cbb5512" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1da0bb55-c09e-4d5f-a155-240d11493da6" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="75d01311-60b6-4246-9350-44bf5ac1a6ea" name="LoadStuff" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="731953bd-7b8d-40bf-bc8f-1a45536c5b28" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1da0bb55-c09e-4d5f-a155-240d11493da6" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="33a2bc96-05bf-4801-8567-874860366e07" name="execBoot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="435c73c7-3ae6-4f05-827a-9d29cdf40795" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bc0ba470-5fc8-4faa-a085-785333ff1420" direction="Return" isUnique="false">
+                  <elementDefinition Id="e1fdee35-8b78-49c2-92c9-c4d0bbde7e12" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="eeff0c64-57d2-4e85-82e9-5757b0625fcb" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6d260996-cd08-4214-9a39-0ee2a413a192" name="OSBootLoader" isAbstract="false" isLeaf="false" cachedFullName="ClassDiagram::OSBootLoader">
+        <elementDefinition Id="85480611-7e11-4268-a386-86c461e86bea" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="91881660-0647-4c31-99f4-06ee7ddaee31" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aecbed34-074d-4287-9892-afb290978bd7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1da0bb55-c09e-4d5f-a155-240d11493da6" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="219d7261-5fd1-449a-88ab-1a4d0c60c0f9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="eeff0c64-57d2-4e85-82e9-5757b0625fcb" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7eb138e4-694d-4566-beb6-ec32f41e4691" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="df9a2938-d05a-475b-8afe-7c48fac6b22e" name="ClassDiagram">
+    <elementDefinition Id="669a51cf-4692-4161-895b-d9571b9272da" />
+  </package>
+</logicalClassDesignerModel>

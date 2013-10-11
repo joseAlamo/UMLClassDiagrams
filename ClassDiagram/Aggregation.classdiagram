@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6e1de286-98b1-46d2-a150-9c90937fe1c7" name="Aggregation" linkedPackageId="0a4fa17c-dad0-485c-a7fa-8ab25469a11e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9f3ac6a2-12d9-49a1-a146-d39196ba354a">
+      <profileInstance Id="1a19f654-1cdb-45e2-a63c-19ad150d39a1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6033785f-a6ee-45ee-b637-e49080c80cf8">
+      <profileInstance Id="588e35e3-91d2-466e-b721-d8df7deb6a20" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5450e583-59fd-4618-b86b-63737cddf63a" name="Maestro" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="475e7ef9-41db-41d2-96cc-5921a1c050f7" />
+        <targetEnds>
+          <association Id="1f823f49-5af2-4dee-9ea2-5325d62a99d1" isDerived="false" sourceEndRoleName="Maestros" targetEndRoleName="Alumno" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2de32492-6661-46a5-9c36-75e8d9dcb5d5" LastKnownName="Alumno" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22c75603-3fdb-40bd-be66-60f49de4316f" name="Maestros" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1e6d5a1e-07a9-49be-839b-5a3b35ec9449" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c931e97-1e7b-48e9-b612-5fe011459407" name="Alumno" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ab11910-e25b-429d-ab98-4e4775b90184" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d0c1195b-e2bb-44db-9822-840d1d524fc7" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="b84f25ae-ac0a-497a-9d32-c95ce05692c9" name="obtenalumnos" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="badd4361-b2c5-4d87-859d-d22b95513e5a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a0b8f25-e861-4a38-96fa-1f1479dfcf02" direction="Return" isUnique="false">
+                  <elementDefinition Id="dae6e58a-a41b-481c-a3d9-bc2e0572f534" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6ce6a0e3-2f43-4da8-acc9-f55aad0eef68" LastKnownName="Alumno[]" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="16470dec-f69c-4a2b-8133-ef61cdfc9a8c" name="Materia" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1d6f26d-8ee9-4e97-b4ee-e87e5e28e9a7" />
+        <targetEnds>
+          <association Id="47f0d8ae-2e3e-4978-affe-98bb6e7d234c" isDerived="false" sourceEndRoleName="Clasificación" targetEndRoleName="Alumno" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2de32492-6661-46a5-9c36-75e8d9dcb5d5" LastKnownName="Alumno" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9786bc5a-70f2-4a84-841e-c7ac9c83df0b" name="Clasificación" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dd3d4231-4742-495b-9f3e-a73beef9f6f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01e3c2eb-89dc-45fe-b584-46c87ea66dd3" name="Alumno" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dbb1c4a4-d95e-4ec9-b8f2-40488b81d3eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="45ac658c-ef06-47dc-a028-12ab957b9d4e" />
+          </association>
+          <association Id="bc7851a9-fda5-41a7-bc0b-5f431e8aa22f" isDerived="false" sourceEndRoleName="Materia" targetEndRoleName="Clasifiación" isLeaf="false" isAbstract="false">
+            <classMoniker Id="da286320-efdd-41a6-a75f-ac1fd7390eb5" LastKnownName="Calificación" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa1d83b3-e100-4b8c-bb9b-fbe27aa3d259" name="Materia" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7d56f60e-ba7d-48fe-b5ab-ea4b4d7db1ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f01de9a-4980-4d6d-b957-9768d7a0d1c5" name="Clasifiación" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a63dfc12-fb96-4dd9-a841-d566e3604b1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="001bdaff-2812-44f5-9642-4a5ad78d15d7" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f17f63bc-d6c7-4cc8-90c4-ad1b5c6a560d" name="Promedio" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0d17af4e-31b7-47b9-b7b8-72cae367c4cd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="633d7f3d-5a62-433b-846d-1a17a2fdbdb8" LastKnownName="Calficación" />
+            </type_NamedElement>
+          </property>
+          <property Id="47400b85-f041-4810-b6b0-7266ec013c9c" name="MejorAlumno" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2ee4263-112e-48ae-a9e7-0e197a2ab094" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bcc32130-6652-4370-82d3-460e3c256675" LastKnownName="Alumno" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2de32492-6661-46a5-9c36-75e8d9dcb5d5" name="Alumno" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db23a1bd-e45e-4a41-bb0d-26bbb651f534" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="da286320-efdd-41a6-a75f-ac1fd7390eb5" name="Calificación" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3388429d-eb8e-4870-b244-c6abb92781fd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="633d7f3d-5a62-433b-846d-1a17a2fdbdb8" name="Calficación" isAbstract="false" isLeaf="false" cachedFullName="Calficación">
+        <elementDefinition Id="086b00da-5f9f-4bc1-8096-bc82f1e4c582" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bcc32130-6652-4370-82d3-460e3c256675" name="Alumno" isAbstract="false" isLeaf="false" cachedFullName="ClassDiagram::Alumno">
+        <elementDefinition Id="db23a1bd-e45e-4a41-bb0d-26bbb651f534" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6ce6a0e3-2f43-4da8-acc9-f55aad0eef68" name="Alumno[]" isAbstract="false" isLeaf="false" cachedFullName="Alumno[]">
+        <elementDefinition Id="28ee2b03-55ac-4103-bb01-459042ad3980" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="0a4fa17c-dad0-485c-a7fa-8ab25469a11e" name="ClassDiagram">
+    <elementDefinition Id="669a51cf-4692-4161-895b-d9571b9272da" />
+  </package>
+</logicalClassDesignerModel>

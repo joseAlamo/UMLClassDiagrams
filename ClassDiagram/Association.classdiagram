@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c1cfb50c-532b-4301-b25f-a8c0fb6ba972" name="Association" linkedPackageId="b07f8f86-1aef-4285-bc08-7112619fe255" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="647a1e1f-47e9-4ed1-9170-1fb98c5f7548">
+      <profileInstance Id="d60a4fea-74b6-4e32-8cc0-6d619a823b1f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6ce969e5-bfb7-4ae0-93de-4fafe812bb82">
+      <profileInstance Id="815b725b-db30-40b4-bc43-03b5a1284be5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="84114bac-3b5e-4e1d-99eb-8110690c9be5" name="Cocinero" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3426561f-7767-417b-a0e5-3cbb6297146c" />
+        <targetEnds>
+          <association Id="b07ef95d-1a04-413d-8440-5e4b722e7b8d" isDerived="false" sourceEndRoleName="Cocinero" targetEndRoleName="Especialidad" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1bd11873-4914-4d94-a232-c53cd7c66272" LastKnownName="Especialidad" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3394f3d5-f557-4378-8fff-76f03add7f39" name="Cocinero" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0fe22671-e0ce-4932-b1c9-50392d188775" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa83fcee-0e31-474d-9e6b-a855a2251ba9" name="Especialidad" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f202a06f-5b43-440d-bb18-feafaf1702b2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc8a612e-3b8b-4432-9121-90999bea5fa0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9e6d8501-bb2e-4392-a484-36a731b8ae6e" name="especialidad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17805169-36d1-438d-9700-3b3ed7a2df71" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="88de1de2-6df0-42aa-9865-7f67b1bdea20" LastKnownName="Especialidad" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0abcb0e2-7ad5-43a0-916c-01e36c085c6d" name="favDelChef" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84255e5a-a438-48c4-99fa-d2a2f01c138b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aff27d2d-516f-4f78-94bd-96be0df681f8" name="Especialidad esp" direction="In" isUnique="false">
+                  <elementDefinition Id="d7baa740-9ed5-4076-86ea-6469e563a6fa" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4db9d81a-506a-4a98-87d6-90d329bec4c2" direction="Return" isUnique="false">
+                  <elementDefinition Id="afe5d09e-d194-41bc-a62a-108165cf982c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f883fa8a-87ff-4fba-9803-f3f6e2f3e1f2" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1bd11873-4914-4d94-a232-c53cd7c66272" name="Especialidad" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ed0cca9e-ae54-44ea-b044-5b3924c9115c" />
+        <ownedAttributesInternal>
+          <property Id="2355c6b1-2c40-493d-926b-d18e7f77166e" name="Ingredientes" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f10d36f-823c-4c8b-85a1-4de9e0d6f687" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b9ccec4a-7cf5-43a7-a9ae-96f9e6b24df4" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="88de1de2-6df0-42aa-9865-7f67b1bdea20" name="Especialidad" isAbstract="false" isLeaf="false" cachedFullName="ClassDiagram::Especialidad">
+        <elementDefinition Id="ed0cca9e-ae54-44ea-b044-5b3924c9115c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b9ccec4a-7cf5-43a7-a9ae-96f9e6b24df4" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="219d7261-5fd1-449a-88ab-1a4d0c60c0f9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f883fa8a-87ff-4fba-9803-f3f6e2f3e1f2" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7eb138e4-694d-4566-beb6-ec32f41e4691" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b07f8f86-1aef-4285-bc08-7112619fe255" name="ClassDiagram">
+    <elementDefinition Id="669a51cf-4692-4161-895b-d9571b9272da" />
+  </package>
+</logicalClassDesignerModel>

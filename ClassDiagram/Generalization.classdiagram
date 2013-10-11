@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f13b1eb8-0ad8-4d18-b87b-83d50fcce5a4" name="Generalization" linkedPackageId="11224477-4bc8-40b6-bce8-6ac6056a0cea" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a5dacdb6-1f9a-4e9c-8297-eeb56bf7c31e">
+      <profileInstance Id="35b122da-02e0-4e6e-89a8-92305ce59212" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="98ffc3a6-28c9-4752-bd0c-bd6ed6fb1713">
+      <profileInstance Id="c6377491-eedf-4f84-ae2a-4827fbd09afb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ddbfb91-4b29-4dac-986a-de627d7cb338" name="Perro" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="418e6e57-7c4e-41fc-b9bd-cf8f490816bb" />
+        <ownedAttributesInternal>
+          <property Id="a5bb0b3e-3ff7-4412-b163-01385fe3d80c" name="Color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="caaf97e8-8a85-4ede-8711-109028751c72" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d368c956-4a1c-4734-92fe-09311b213673" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="3bd44f35-8b53-44d7-bb96-a2e1b5286009" name="Edad" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fbf38971-7159-4c37-8fe5-3d293ed835dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a9dad8b1-6103-4888-aa0f-ec2206d78e4e" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="9d5b8fb5-f49e-406f-8f27-fdc100d998ad" name="Vacunas" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3de55e75-ebda-4b48-bbf2-6ec14a60011b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ea17be07-f400-47be-ac3c-4e6fd7a8d79e" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2745291-193a-4e9f-a56d-439374677282" name="Husky" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="51baa23c-9dd9-4199-adf9-891d21576cff" />
+        <generalsInternal>
+          <generalization Id="acda7327-54d6-44ab-8e75-b11859a2941c" isSubstitutable="false">
+            <classMoniker Id="9ddbfb91-4b29-4dac-986a-de627d7cb338" LastKnownName="Perro" />
+            <elementDefinition Id="2a65994f-893c-4904-9b66-c02578781992" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d368c956-4a1c-4734-92fe-09311b213673" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="219d7261-5fd1-449a-88ab-1a4d0c60c0f9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a9dad8b1-6103-4888-aa0f-ec2206d78e4e" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="aecbed34-074d-4287-9892-afb290978bd7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ea17be07-f400-47be-ac3c-4e6fd7a8d79e" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="7e12ede4-d244-4e7a-b92e-6453219b30ea" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="11224477-4bc8-40b6-bce8-6ac6056a0cea" name="ClassDiagram">
+    <elementDefinition Id="669a51cf-4692-4161-895b-d9571b9272da" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ee9725b4-3011-410f-87c8-ef8c28a8152f" name="Composition" linkedPackageId="1cd946d2-0d53-4eee-82ab-2db1fb47f127" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0a33a437-db53-4fec-82be-30192e2fbebc">
+      <profileInstance Id="a748ea63-df40-407a-807e-5163949bddeb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e0957ee1-7223-42e6-bbdc-150984d42104">
+      <profileInstance Id="d7a35cfd-671d-4698-9b24-902540e5b71e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5dd2edaf-0fad-45ad-bd44-4200e491e531" name="Pajaro" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="88fe417d-f087-4453-8a36-6805624aa86c" />
+        <targetEnds>
+          <association Id="5572ad60-66c8-4a13-9bd9-14bf4966bfb7" isDerived="false" sourceEndRoleName="Pajaro" targetEndRoleName="AlaIzquierda" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d0a6ea31-66b3-4af0-893a-abab644fe900" LastKnownName="AlaIzquierda" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d58e9fec-f73a-47e0-9543-7aba66c602e2" name="Pajaro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="902b288f-17e9-49c6-82e0-0ac2ab2ef452" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01898787-e789-4b4f-a5ae-e761551de060" name="AlaIzquierda" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="3c887a2f-0a04-48f2-b3a5-495a8055fef2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16f489f4-b622-4c99-91b4-9eb19ef96b1a" />
+          </association>
+          <association Id="608e554a-219f-4133-9fd9-6a692f06e5b7" isDerived="false" sourceEndRoleName="Pajaro" targetEndRoleName="AlaDerecha" isLeaf="false" isAbstract="false">
+            <classMoniker Id="99d3fafe-15bb-4328-86c0-cf7b12305fd9" LastKnownName="AlaDerecha" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6522de5-dc38-44f9-a769-d1b4f8455c91" name="Pajaro" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="78ea123f-937b-40af-9062-48c8eba48a39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0d463ad7-ddda-44c0-b8ee-e438661ad878" name="AlaDerecha" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="c88b9e98-818f-46c5-aeec-2abcaece3d8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9d800ab1-f5ec-45a5-91bd-1ad83ac94717" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c32be4ef-996c-41bb-a6eb-666a406e766a" name="AlaD" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="826d0bd7-8bf7-46a6-a813-3bb68220cc7b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cf3bcffe-d686-449b-9795-d57a1d3c8dea" LastKnownName="AlaDerecha" />
+            </type_NamedElement>
+          </property>
+          <property Id="e30b4d9b-5680-4f25-bb09-55ac9dd9cb02" name="AlaI" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="610ff249-5922-4b06-b281-dff6fb0a4680" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4e66f93e-7320-4590-a21d-8fec34634874" LastKnownName="AlaIzquierda" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d0a6ea31-66b3-4af0-893a-abab644fe900" name="AlaIzquierda" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d973b0d9-8da6-4a4f-a42b-ebc1c8bba6a1" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99d3fafe-15bb-4328-86c0-cf7b12305fd9" name="AlaDerecha" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72d50caa-d255-4ae6-b8b1-5cd8fa5c53ed" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4e66f93e-7320-4590-a21d-8fec34634874" name="AlaIzquierda" isAbstract="false" isLeaf="false" cachedFullName="ClassDiagram::AlaIzquierda">
+        <elementDefinition Id="d973b0d9-8da6-4a4f-a42b-ebc1c8bba6a1" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cf3bcffe-d686-449b-9795-d57a1d3c8dea" name="AlaDerecha" isAbstract="false" isLeaf="false" cachedFullName="ClassDiagram::AlaDerecha">
+        <elementDefinition Id="72d50caa-d255-4ae6-b8b1-5cd8fa5c53ed" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="1cd946d2-0d53-4eee-82ab-2db1fb47f127" name="ClassDiagram">
+    <elementDefinition Id="669a51cf-4692-4161-895b-d9571b9272da" />
+  </package>
+</logicalClassDesignerModel>
